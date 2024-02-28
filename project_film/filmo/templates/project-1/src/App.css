@@ -1,0 +1,144 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+}
+:root{
+  --red: #d01c28;
+  --gray : #2e2e2e;
+}
+.container{
+  margin:0 auto;
+  max-width: 1280px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  /* border : 2px solid; */
+  height :72px;
+  align-items: center;
+
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+nav li{
+  cursor: pointer;
+}
+button{
+  all:unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height:32px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 20px;
+  width: auto;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+.hero{
+  display:flex;
+  align-items: center;
+  height: calc(100vh - 72px);
+}
+.hero h1{
+  font-weight:800;
+  font-size: 108px;
+  line-height: 102px;
+}
+.hero p{
+  font-weight:600px;
+  color: var(--gray);
+  width:400px;
+}
+.hero-button{
+  display: flex;
+  gap: 40px;
+  font-size: 24px;
+  width: auto;
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.secondary-button{
+  background-color: transparent;
+  color: var(--gray);
+  border:1px solid grey;
+  width:auto;
+  box-shadow: none;
+}
+.secondary-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.shopping p{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.brand-icons{
+  display: flex;
+  gap:16px;
+}
+/* .reveal-text{
+  overflow: hidden;
+  white-space: nowrap;
+  animation :reveal 3s linear forwards;
+}
+@keyframes reveal{
+  from {
+    width:0;
+  }
+  to {
+    width: 100%;
+  }
+} */
